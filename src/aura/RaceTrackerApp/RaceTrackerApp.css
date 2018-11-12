@@ -1,0 +1,25 @@
+.THIS .xcs-fix-max-height{
+    max-height: 400px;
+    max-width: 1000px;
+}
+.THIS .rating {
+	font-size: 10px;
+width:50px
+}
+.THIS .style1 {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.THIS .style2 {
+    border-collapse: collapse;
+    width: 60%;
+     height:50%;
+}
+.THIS .style4{
+    text-align:center;
+}
+.THIS .style5{
+    font-size: 10px;
+    color: #7575a3;
+}

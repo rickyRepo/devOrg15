@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pay</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pays</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date of Payment --></label>
+        <name>Date_of_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Expense for which you are paying --></help>
+        <label><!-- Expense --></label>
+        <name>Expense__c</name>
+        <relationshipLabel><!-- Pays --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pay To --></label>
+        <name>Pay_To__c</name>
+        <picklistValues>
+            <masterLabel>Anupam</masterLabel>
+            <translation><!-- Anupam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biman</masterLabel>
+            <translation><!-- Biman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midhun</masterLabel>
+            <translation><!-- Midhun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rahul</masterLabel>
+            <translation><!-- Rahul --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

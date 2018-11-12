@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To keep track of attendee of festival</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>E_mail__c</fullName>
+        <description>Attendee email address</description>
+        <externalId>false</externalId>
+        <label>E_mail</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Festival__c</fullName>
+        <description>festival to which attendee is going</description>
+        <externalId>false</externalId>
+        <label>Festival</label>
+        <referenceTo>Festival__c</referenceTo>
+        <relationshipLabel>Attendees</relationshipLabel>
+        <relationshipName>Attendees</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Phone_Number__c</fullName>
+        <description>phone number of attendee</description>
+        <externalId>false</externalId>
+        <label>Phone Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Date__c</fullName>
+        <description>date on which attendee booked ticket</description>
+        <externalId>false</externalId>
+        <label>Purchase Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Source__c</fullName>
+        <description>Source from where attendee booked the ticket</description>
+        <externalId>false</externalId>
+        <label>Purchase Source</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Box Office</fullName>
+                    <default>false</default>
+                    <label>Box Office</label>
+                </value>
+                <value>
+                    <fullName>Official Website</fullName>
+                    <default>false</default>
+                    <label>Official Website</label>
+                </value>
+                <value>
+                    <fullName>3rd Party Vendor</fullName>
+                    <default>false</default>
+                    <label>3rd Party Vendor</label>
+                </value>
+                <value>
+                    <fullName>Facebook</fullName>
+                    <default>false</default>
+                    <label>Facebook</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ticket_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Ticket Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>VIP</fullName>
+                    <default>false</default>
+                    <label>VIP</label>
+                </value>
+                <value>
+                    <fullName>General Admission</fullName>
+                    <default>false</default>
+                    <label>General Admission</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tickets_Purchased__c</fullName>
+        <description>number of ticket a user has purchased</description>
+        <externalId>false</externalId>
+        <label>Tickets Purchased</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( ISPICKVAL(Ticket_Type__c , &quot;VIP&quot;) ,100 *  Tickets_Purchased__c , 50 *  Tickets_Purchased__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Attendee</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Attendee Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Attendees</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>LimitTicket</fullName>
+        <active>true</active>
+        <description>limit number of tickets an individual can buy</description>
+        <errorConditionFormula>Tickets_Purchased__c    &lt; 1  ||  Tickets_Purchased__c &gt; 5</errorConditionFormula>
+        <errorMessage>Sorry. You can not buy more than 2 tickets at a time.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

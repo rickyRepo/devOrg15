@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>false</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>false</enableSharing>
+    <enableStreamingApi>false</enableStreamingApi>
+    <fields>
+        <fullName>Genre__c</fullName>
+        <description>he type of music the band plays</description>
+        <externalId>false</externalId>
+        <label>Genre</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Rock and Roll</fullName>
+                    <default>false</default>
+                    <label>Rock and Roll</label>
+                </value>
+                <value>
+                    <fullName>Bossanova</fullName>
+                    <default>false</default>
+                    <label>Bossanova</label>
+                </value>
+                <value>
+                    <fullName>Electronic</fullName>
+                    <default>false</default>
+                    <label>Electronic</label>
+                </value>
+                <value>
+                    <fullName>Jazz</fullName>
+                    <default>false</default>
+                    <label>Jazz</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Headliner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>a checkbox that will be checked if the band is a &quot;Headliner.&quot;</description>
+        <externalId>false</externalId>
+        <label>Headliner</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Manager_Phone_Number__c</fullName>
+        <description>Manager Phone Number</description>
+        <externalId>false</externalId>
+        <label>Manager Phone Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Needs_Piano__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>if the band needs a piano on the stage they play at</description>
+        <externalId>false</externalId>
+        <label>Needs Piano</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Set_Time__c</fullName>
+        <description>the time the band plays</description>
+        <externalId>false</externalId>
+        <label>Set Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>10 AM</fullName>
+                    <default>false</default>
+                    <label>10 AM</label>
+                </value>
+                <value>
+                    <fullName>11 AM</fullName>
+                    <default>false</default>
+                    <label>11 AM</label>
+                </value>
+                <value>
+                    <fullName>12 PM</fullName>
+                    <default>false</default>
+                    <label>12 PM</label>
+                </value>
+                <value>
+                    <fullName>01 PM</fullName>
+                    <default>false</default>
+                    <label>01 PM</label>
+                </value>
+                <value>
+                    <fullName>02 PM</fullName>
+                    <default>false</default>
+                    <label>02 PM</label>
+                </value>
+                <value>
+                    <fullName>03 PM</fullName>
+                    <default>false</default>
+                    <label>03 PM</label>
+                </value>
+                <value>
+                    <fullName>04 PM</fullName>
+                    <default>false</default>
+                    <label>04 PM</label>
+                </value>
+                <value>
+                    <fullName>05 PM</fullName>
+                    <default>false</default>
+                    <label>05 PM</label>
+                </value>
+                <value>
+                    <fullName>06 PM</fullName>
+                    <default>false</default>
+                    <label>06 PM</label>
+                </value>
+                <value>
+                    <fullName>07 PM</fullName>
+                    <default>false</default>
+                    <label>07 PM</label>
+                </value>
+                <value>
+                    <fullName>08 PM</fullName>
+                    <default>false</default>
+                    <label>08 PM</label>
+                </value>
+                <value>
+                    <fullName>09 PM</fullName>
+                    <default>false</default>
+                    <label>09 PM</label>
+                </value>
+                <value>
+                    <fullName>1O PM</fullName>
+                    <default>false</default>
+                    <label>1O PM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Twitter_Handle__c</fullName>
+        <description>Twitter Handle</description>
+        <externalId>false</externalId>
+        <label>Twitter Handle</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>Band</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Band Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Bands</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

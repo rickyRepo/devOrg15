@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Stage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Stages</value>
+    </caseValues>
+    <fields>
+        <label><!-- Crowd Capacity --></label>
+        <name>Crowd_Capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Festival --></label>
+        <name>Festival__c</name>
+        <relationshipLabel><!-- Stages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Has Piano --></label>
+        <name>Has_Piano__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Stage --></label>
+        <name>Main_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special equipment available --></label>
+        <name>Special_equipment_available__c</name>
+        <picklistValues>
+            <masterLabel>extra subwoofers</masterLabel>
+            <translation><!-- extra subwoofers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>lasers</masterLabel>
+            <translation><!-- lasers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>multiple drumsets</masterLabel>
+            <translation><!-- multiple drumsets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pyrotechnics</masterLabel>
+            <translation><!-- pyrotechnics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>smoke machines</masterLabel>
+            <translation><!-- smoke machines --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage Manager --></label>
+        <name>Stage_Manager__c</name>
+        <relationshipLabel><!-- Stages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Volunteer Number --></label>
+        <name>Volunteer_Number__c</name>
+    </fields>
+    <layouts>
+        <layout>Stage Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Set Time --></label>
+        <name>Set_Time</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

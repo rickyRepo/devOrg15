@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Junction Object to make many to many relationship between Stage and Band</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>false</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>false</enableSharing>
+    <enableStreamingApi>false</enableStreamingApi>
+    <fields>
+        <fullName>Band__c</fullName>
+        <description>Master relationship with Band</description>
+        <externalId>false</externalId>
+        <label>Band</label>
+        <referenceTo>Band__c</referenceTo>
+        <relationshipLabel>Set Times</relationshipLabel>
+        <relationshipName>Set_Times</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <description>master relation with Stage</description>
+        <externalId>false</externalId>
+        <label>Stage</label>
+        <referenceTo>Stage__c</referenceTo>
+        <relationshipLabel>Set Times</relationshipLabel>
+        <relationshipName>Set_Times</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Review</fullName>
+                    <default>false</default>
+                    <label>In Review</label>
+                </value>
+                <value>
+                    <fullName>Confirmed</fullName>
+                    <default>false</default>
+                    <label>Confirmed</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Time__c</fullName>
+        <description>time for stage and band</description>
+        <externalId>false</externalId>
+        <label>Time</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>09 AM</fullName>
+                    <default>false</default>
+                    <label>09 AM</label>
+                </value>
+                <value>
+                    <fullName>10 AM</fullName>
+                    <default>false</default>
+                    <label>10 AM</label>
+                </value>
+                <value>
+                    <fullName>11 AM</fullName>
+                    <default>false</default>
+                    <label>11 AM</label>
+                </value>
+                <value>
+                    <fullName>12 PM</fullName>
+                    <default>false</default>
+                    <label>12 PM</label>
+                </value>
+                <value>
+                    <fullName>01 PM</fullName>
+                    <default>false</default>
+                    <label>01 PM</label>
+                </value>
+                <value>
+                    <fullName>02 PM</fullName>
+                    <default>false</default>
+                    <label>02 PM</label>
+                </value>
+                <value>
+                    <fullName>03 PM</fullName>
+                    <default>false</default>
+                    <label>03 PM</label>
+                </value>
+                <value>
+                    <fullName>04 PM</fullName>
+                    <default>false</default>
+                    <label>04 PM</label>
+                </value>
+                <value>
+                    <fullName>05 PM</fullName>
+                    <default>false</default>
+                    <label>05 PM</label>
+                </value>
+                <value>
+                    <fullName>06 PM</fullName>
+                    <default>false</default>
+                    <label>06 PM</label>
+                </value>
+                <value>
+                    <fullName>07 PM</fullName>
+                    <default>false</default>
+                    <label>07 PM</label>
+                </value>
+                <value>
+                    <fullName>08 PM</fullName>
+                    <default>false</default>
+                    <label>08 PM</label>
+                </value>
+                <value>
+                    <fullName>09 PM</fullName>
+                    <default>false</default>
+                    <label>09 PM</label>
+                </value>
+                <value>
+                    <fullName>10 PM</fullName>
+                    <default>false</default>
+                    <label>10 PM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Set Time</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ST-{0000}</displayFormat>
+        <label>Set Time Name</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Set Times</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

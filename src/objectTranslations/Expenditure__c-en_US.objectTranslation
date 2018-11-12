@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Expenditure</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Expenditures</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date of expense --></label>
+        <name>Date_of_expense__c</name>
+    </fields>
+    <fields>
+        <label><!-- Each Contribution --></label>
+        <name>Each_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expenditure Purpose --></label>
+        <name>Expenditure_Purpose__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paid By --></label>
+        <name>Paid_By__c</name>
+        <picklistValues>
+            <masterLabel>Anupam</masterLabel>
+            <translation><!-- Anupam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biman</masterLabel>
+            <translation><!-- Biman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midhun</masterLabel>
+            <translation><!-- Midhun --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rahul</masterLabel>
+            <translation><!-- Rahul --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Expense --></label>
+        <name>Total_Expense__c</name>
+    </fields>
+    <layouts>
+        <layout>Expenditure Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

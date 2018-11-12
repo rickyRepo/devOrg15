@@ -1,0 +1,22 @@
+<apex:page standardController="account" recordSetVar="Accounts">
+    <apex:pageBlock >
+        <apex:repeat value="{! Accounts}" var="a">
+           <li > 
+               <apex:outputLink value="/{! URLFOR(a['Id'])}">{!a['Id']}</apex:outputLink>  &nbsp;&nbsp;&nbsp;
+               <apex:outputField value="{! a.Name}"/>  
+           </li>
+               
+        </apex:repeat>    
+    </apex:pageBlock>
+ </apex:page>
+
+<!--<apex:page standardController="Account" recordSetVar="accounts">
+        <apex:repeat var="a" value="{!accounts}">
+            <li>
+                <apex:outputLink value="/{!a.id}" >
+                    {!a.name}
+                </apex:outputLink>
+            </li>
+        </apex:repeat>
+
+</apex:page>-->

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>My Task</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>My Tasks</value>
+    </caseValues>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <picklistValues>
+            <masterLabel>CFO Lens</masterLabel>
+            <translation><!-- CFO Lens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GCJ</masterLabel>
+            <translation><!-- GCJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Pipeline</masterLabel>
+            <translation><!-- Global Pipeline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nerve Center</masterLabel>
+            <translation><!-- Nerve Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SmartNet</masterLabel>
+            <translation><!-- SmartNet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Task Name --></label>
+        <name>Task_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Type --></label>
+        <name>Task_Type__c</name>
+        <picklistValues>
+            <masterLabel>Official</masterLabel>
+            <translation><!-- Official --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation><!-- Personal --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
